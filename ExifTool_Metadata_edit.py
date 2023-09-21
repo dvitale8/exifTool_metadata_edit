@@ -161,9 +161,6 @@ def add_metadata(file_directory):
 convert()
 
 
-# learn how to export code so others can use it
-# Create visual workflow
-
 
 
 
