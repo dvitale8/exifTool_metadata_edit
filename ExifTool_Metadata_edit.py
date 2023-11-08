@@ -144,7 +144,7 @@ def add_metadata(file_directory):
             preset_1 = "Plot of Horizontal to Vertical Spectral Ratio that plots frequency in Hertz on the x-axis and amplitude (a dimensionless value) on the y-axis.  The resonance frequency is indicated at the top of the plot."
             preset_2 = "Single component spectra plot frequency in Hertz are shown on the x axis and acceleration in mm/s per Hertz are plotted on the y-axis.   The north-south component is green; the east-west component is blue; and up-down (vertical) is pink."
             print(f"\n","Choose a preset comment to add to your image or enter a new comment","\n","1 =", preset_1,"\n","2 =", preset_2, "\n","3= input your own comment: ", "\n" )
-            choose_comment =input(f"What comment to you want to add to {filename}? Choose 1,2, or 3 from the above text: ")
+            choose_comment =input(f"What comment to you want to add to {filename}? Choose 1, 2, or 3 from the above text: ")
             print()
 
             if choose_comment == '1':
@@ -152,6 +152,7 @@ def add_metadata(file_directory):
             elif choose_comment == '2':
                 comment = preset_2
             elif choose_comment =='3':
+                comment ="null"
                 comment = input(f"What comment to you want to add to {filename} ")
                 
             
@@ -160,6 +161,9 @@ def add_metadata(file_directory):
 
 convert()
 
+
+# learn how to export code so others can use it
+# Create visual workflow
 
 
 
